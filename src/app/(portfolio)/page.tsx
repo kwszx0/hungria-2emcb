@@ -30,6 +30,18 @@ export default function Home() {
 
       <Separator />
 
+      <div className="flex justify-between items-center h-52">
+        <div className="w-4 h-full bg-[#990F02] rounded-r-full" />
+        <img
+          className="w-[19rem] h-full border-2 border-[#990F02]"
+          src="/assets/image-02.jpg"
+          alt=""
+        />
+        <div className="w-4 h-full bg-[#990f02] rounded-l-full" />
+      </div>
+
+      <Separator />
+
       {/* <div className="h-[2000px]" /> */}
     </Page>
   )
