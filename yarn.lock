@@ -7,6 +7,60 @@
   resolved "https://registry.yarnpkg.com/@alloc/quick-lru/-/quick-lru-5.2.0.tgz#7bf68b20c0a350f936915fcae06f58e32007ce30"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
+"@biomejs/biome@^1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/biome/-/biome-1.9.3.tgz#5362fc390ac00c82e3698824490e3801d012c1b0"
+  integrity sha512-POjAPz0APAmX33WOQFGQrwLvlu7WLV4CFJMlB12b6ZSg+2q6fYu9kZwLCOA+x83zXfcPd1RpuWOKJW0GbBwLIQ==
+  optionalDependencies:
+    "@biomejs/cli-darwin-arm64" "1.9.3"
+    "@biomejs/cli-darwin-x64" "1.9.3"
+    "@biomejs/cli-linux-arm64" "1.9.3"
+    "@biomejs/cli-linux-arm64-musl" "1.9.3"
+    "@biomejs/cli-linux-x64" "1.9.3"
+    "@biomejs/cli-linux-x64-musl" "1.9.3"
+    "@biomejs/cli-win32-arm64" "1.9.3"
+    "@biomejs/cli-win32-x64" "1.9.3"
+
+"@biomejs/cli-darwin-arm64@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/cli-darwin-arm64/-/cli-darwin-arm64-1.9.3.tgz#3a981835a7a891589b356bbdb4e50157e494aa7d"
+  integrity sha512-QZzD2XrjJDUyIZK+aR2i5DDxCJfdwiYbUKu9GzkCUJpL78uSelAHAPy7m0GuPMVtF/Uo+OKv97W3P9nuWZangQ==
+
+"@biomejs/cli-darwin-x64@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/cli-darwin-x64/-/cli-darwin-x64-1.9.3.tgz#0e33284e5def9cbc17705b6a9acbc22b161accb1"
+  integrity sha512-vSCoIBJE0BN3SWDFuAY/tRavpUtNoqiceJ5PrU3xDfsLcm/U6N93JSM0M9OAiC/X7mPPfejtr6Yc9vSgWlEgVw==
+
+"@biomejs/cli-linux-arm64-musl@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/cli-linux-arm64-musl/-/cli-linux-arm64-musl-1.9.3.tgz#b68e2fe56381cbf71770b6c785215448c47595fd"
+  integrity sha512-VBzyhaqqqwP3bAkkBrhVq50i3Uj9+RWuj+pYmXrMDgjS5+SKYGE56BwNw4l8hR3SmYbLSbEo15GcV043CDSk+Q==
+
+"@biomejs/cli-linux-arm64@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/cli-linux-arm64/-/cli-linux-arm64-1.9.3.tgz#bb8186f000bd7366c3a1822a4a505e374905c462"
+  integrity sha512-vJkAimD2+sVviNTbaWOGqEBy31cW0ZB52KtpVIbkuma7PlfII3tsLhFa+cwbRAcRBkobBBhqZ06hXoZAN8NODQ==
+
+"@biomejs/cli-linux-x64-musl@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/cli-linux-x64-musl/-/cli-linux-x64-musl-1.9.3.tgz#01ccee0db2ca2ec9fb51fa69b2fc9e96434b5b32"
+  integrity sha512-TJmnOG2+NOGM72mlczEsNki9UT+XAsMFAOo8J0me/N47EJ/vkLXxf481evfHLlxMejTY6IN8SdRSiPVLv6AHlA==
+
+"@biomejs/cli-linux-x64@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/cli-linux-x64/-/cli-linux-x64-1.9.3.tgz#82d6fb824dd2c76142ab8625e202eb63a34e14f1"
+  integrity sha512-x220V4c+romd26Mu1ptU+EudMXVS4xmzKxPVb9mgnfYlN4Yx9vD5NZraSx/onJnd3Gh/y8iPUdU5CDZJKg9COA==
+
+"@biomejs/cli-win32-arm64@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/cli-win32-arm64/-/cli-win32-arm64-1.9.3.tgz#7fac607ade8e204eecae09e127713f000da0ccf2"
+  integrity sha512-lg/yZis2HdQGsycUvHWSzo9kOvnGgvtrYRgoCEwPBwwAL8/6crOp3+f47tPwI/LI1dZrhSji7PNsGKGHbwyAhw==
+
+"@biomejs/cli-win32-x64@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@biomejs/cli-win32-x64/-/cli-win32-x64-1.9.3.tgz#1cbc269dcd5f29b034cb7f5982353c1cc3629318"
+  integrity sha512-cQMy2zanBkVLpmmxXdK6YePzmZx0s5Z7KEnwmrW54rcXK3myCNbQa09SwGZ8i/8sLw0H9F3X7K4rxVNGU8/D4Q==
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@isaacs/cliui/-/cliui-8.0.2.tgz#b37667b7bc181c168782259bab42474fbf52b550"
@@ -121,6 +175,11 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@phosphor-icons/react@^2.1.7":
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@phosphor-icons/react/-/react-2.1.7.tgz#b11a4b25849b7e3849970b688d9fe91e5d4fd8d7"
+  integrity sha512-g2e2eVAn1XG2a+LI09QU3IORLhnFNAFkNbo2iwbX6NOKSLOwvEMmTa7CgOzEbgNWR47z8i8kwjdvYZ5fkGx1mQ==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -769,6 +828,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -787,6 +847,7 @@ string-width@^5.0.1, string-width@^5.1.2:
     strip-ansi "^7.0.1"
 
 "strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  name strip-ansi-cjs
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
