@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <>
       <header>
-        <div className="fixed top-0 z-10 flex h-16 w-full items-center justify-between bg-[#4D6130] px-2">
+        <div className="fixed top-0 z-30 flex h-16 w-full items-center justify-between bg-[#4D6130] px-2">
           <div className="w-6" />
 
           <div className="flex justify-center items-center gap-1 text-[#D4E5BC]">
@@ -17,7 +17,7 @@ export default function Header() {
             <h1>2EMCB</h1>
           </div>
 
-          <div className="text-[#D4E5BC]">
+          <div className="flex justify-center items-center text-[#D4E5BC]">
             <button
               className="relative w-6 flex items-center justify-center"
               onClick={() => setIsOpen(!isOpen)}
@@ -43,7 +43,7 @@ export default function Header() {
         <nav
           className={`fixed top-0 right-0 h-full w-2/3 backdrop-blur-sm bg-gradient-to-t from-zinc-900 to-[#4D6130]/90 text-white transform transition-transform duration-300 ease-in-out ${
             isOpen ? 'translate-x-0' : 'translate-x-full'
-          }`}
+          } z-20`}
         >
           <ul className="flex flex-col mt-16 h-full text-[#D4E5BC]">
             <li>
