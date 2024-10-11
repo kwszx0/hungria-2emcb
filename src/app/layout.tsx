@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'Hungria - 2EMCB',
     images: [
       {
-        url: 'https://hungria-2emcb.vercel.app/assets/image-05.jpg',
+        url: 'https://hungria-2emcb.vercel.app/assets/image-05.png',
         width: 800,
         height: 600,
       },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     creator: '@szxkw0',
     images: [
       {
-        url: 'https://hungria-2emcb.vercel.app/assets/image-05.jpg',
+        url: 'https://hungria-2emcb.vercel.app/assets/image-05.png',
         width: 800,
         height: 600,
       },
