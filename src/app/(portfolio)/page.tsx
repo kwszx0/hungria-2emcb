@@ -3,14 +3,23 @@
 import Separator from '@/components/Separator'
 import Page from '@/components/templates/Page'
 import {
+  agrandir_grand,
   binggo_wood,
   brice_semiexpanded,
   cmu_serif,
   font29lt_adir,
   lovelo,
+  poppins,
 } from '../fonts'
+import { Quotes } from '@phosphor-icons/react'
 
 export default function Home() {
+  /**
+   * Renders the portfolio page component.
+   *
+   * This component displays the main content of the portfolio page, including an introduction, historical context, and Olympic context.
+   * It uses various custom components and styles to present the information in an organized and visually appealing way.
+   */
   return (
     <Page>
       <Separator />
@@ -114,7 +123,85 @@ export default function Home() {
 
       <Separator />
 
-      <div id="contexto-olimpico">l</div>
+      <div id="contexto-olimpico">
+        <div className="flex mx-2">
+          <div className="flex justify-center items-center w-1/2">
+            <img
+              className="w-44 object-cover border-[10px] border-[#990F02] rounded-full"
+              src="/assets/image-04.png"
+              alt="Contexto Olímpico"
+            />
+          </div>
+          <div
+            className={`${agrandir_grand.className} flex flex-col justify-center items-center w-1/2 text-[#990F02]`}
+          >
+            <h1 className="text-2xl">Contexto</h1>
+            <h1 className="text-2xl">Olímpico:</h1>
+          </div>
+        </div>
+
+        <div className="mx-2">
+          <div className="flex">
+            <img className="w-[8rem]" src="/assets/image-05.png" alt="" />
+
+            <div className="text-[#990F02]">
+              <p className={`${poppins.className} text-xs`}>
+                <span
+                  className={`${lovelo.className} inline-flex items-baseline text-xl`}
+                >
+                  <Quotes
+                    className="scale-x-[-1] scale-y-[-1]"
+                    size={44}
+                    weight="fill"
+                  />
+                  A HUNGRIA
+                </span>{' '}
+                possui uma das
+              </p>
+              <p className={`${poppins.className} text-xs`}>
+                histórias olímpicas mais ricas e impressionantes do mundo,
+                destacando-se
+              </p>
+            </div>
+          </div>
+          <p className={`${poppins.className} text-xs text-[#990F02]`}>
+            {' '}
+            entre as nações com o maior número de medalhas per capita. Desde sua
+            primeira participação nas Olimpíadas de 1896, em Atenas, o país
+            construiu uma trajetória marcada por conquistas extraordinárias,
+            especialmente em esportes como esgrima, polo aquático, canoagem e
+            ginástica.
+          </p>
+          <p className={`${poppins.className} text-xs text-[#990F02]`}>
+            <span className="ml-8">Ao</span> longo de mais de um século de
+            participação nos Jogos, a Hungria conquistou mais de 500 medalhas, o
+            que a coloca entre os países mais bem-sucedidos na história das
+            Olimpíadas. Atletas húngaros como Aladár Gerevich, com seis medalhas
+            de ouro em esgrima, e Krisztina Egerszegi, uma das nadadoras mais
+            vitoriosas de todos os tempos, tornaram-se ícones não só no país,
+            mas globalmente. Esses atletas ajudaram a definir a reputação da
+            Hungria como uma nação esportiva de elite, cujo espírito competitivo
+            e habilidade técnica permanecem fortes em cada edição dos Jogos.
+          </p>
+          <p className={`${poppins.className} text-xs text-[#990F02]`}>
+            <span className="ml-8">Nos</span> dias de hoje, a Hungria continua a
+            ser uma força respeitável nas Olimpíadas, especialmente nas
+            modalidades em que tem tradição, como a canoagem e a esgrima. Com
+            uma sólida infraestrutura esportiva e programas de formação de
+            atletas, o país mantém seu legado e busca constantemente novos
+            talentos para manter sua posição entre as potências olímpicas. A
+            combinação de tradição e inovação garante que a Hungria continue a
+            ser um nome forte no cenário olímpico mundial.
+            <Quotes
+              className="inline-flex items-baseline"
+              size={44}
+              weight="fill"
+            />
+          </p>
+        </div>
+      </div>
+
+      <Separator />
 
       {/* <div className="h-[2000px]" /> */}
     </Page>
