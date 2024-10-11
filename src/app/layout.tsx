@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: 'Hungria - 2EMCB',
   description: 'Portfólio informativo --- VIII JIMM',
   icons: {
-    icon: '/icon.png',
-    shortcut: '/icon.png',
-    apple: '/icon.png',
+    icon: '/assets/image-05.png',
+    shortcut: '/assets/image-05.png',
+    apple: '/assets/image-05.png',
   },
   alternates: {
     canonical: 'https://hungria-2emcb.vercel.app/',
