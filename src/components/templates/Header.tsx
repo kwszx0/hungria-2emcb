@@ -1,3 +1,4 @@
+import { inter, poppins } from '@/app/fonts'
 import { List, X } from '@phosphor-icons/react'
 import { useState } from 'react'
 
@@ -44,14 +45,24 @@ export default function Header() {
             isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <ul className="flex flex-col mt-20 m-3 h-full space-y-4">
+          <ul className="flex flex-col mt-16 h-full text-[#D4E5BC]">
             <li>
-              <a href="#introduction" className="text-xl">
+              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a
+                href="#contexto-historico"
+                className="text-xl h-14 flex items-center hover:bg-[#3B4C23]/90 transition-colors duration-300 ease-in-out p-2"
+                onClick={() => setIsOpen(false)}
+              >
                 Contexto Histórico
               </a>
             </li>
             <li>
-              <a href="#olympic-context" className="text-xl">
+              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a
+                href="#contexto-olimpico"
+                className="text-xl h-14 flex items-center hover:bg-[#3B4C23]/90 transition-colors duration-300 ease-in-out p-2"
+                onClick={() => setIsOpen(false)}
+              >
                 Contexto Olímpico
               </a>
             </li>
