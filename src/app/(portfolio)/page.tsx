@@ -7,19 +7,14 @@ import {
   binggo_wood,
   brice_semiexpanded,
   cmu_serif,
+  donau,
   font29lt_adir,
   lovelo,
   poppins,
 } from '../fonts'
-import { Quotes } from '@phosphor-icons/react'
+import RoundedBox from '@/components/RoundedBox'
 
 export default function Home() {
-  /**
-   * Renders the portfolio page component.
-   *
-   * This component displays the main content of the portfolio page, including an introduction, historical context, and Olympic context.
-   * It uses various custom components and styles to present the information in an organized and visually appealing way.
-   */
   return (
     <Page>
       <Separator />
@@ -68,7 +63,9 @@ export default function Home() {
               Contexto Historico:
             </h1>
 
-            <div className={`${font29lt_adir.className} px-2 space-y-4`}>
+            <div
+              className={`${font29lt_adir.className} px-2 space-y-4 text-justify`}
+            >
               <p>
                 <span className="ml-8">A</span> Hungria foi formada por tribos
                 magiares que migraram para a Bacia dos Cárpatos no final do
@@ -110,7 +107,7 @@ export default function Home() {
 
             <div className="flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 z-10">
               <img
-                className="w-80 h-[13.5rem] border-[3px] border-dashed border-[#990F02]"
+                className="w-80 h-[13.5rem] object-cover border-[3px] border-dashed border-[#990F02]"
                 src="/assets/image-03.jpg"
                 alt="Localização"
               />
@@ -123,8 +120,8 @@ export default function Home() {
 
       <Separator />
 
-      <div id="contexto-olimpico">
-        <div className="flex mx-2">
+      <div className="flex flex-col mx-2" id="contexto-olimpico">
+        <div className="flex">
           <div className="flex justify-center items-center w-1/2">
             <img
               className="w-44 object-cover border-[10px] border-[#990F02] rounded-full"
@@ -132,6 +129,7 @@ export default function Home() {
               alt="Contexto Olímpico"
             />
           </div>
+
           <div
             className={`${agrandir_grand.className} flex flex-col justify-center items-center w-1/2 text-[#990F02]`}
           >
@@ -140,64 +138,183 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mx-2">
+        <div className="flex flex-col">
           <div className="flex">
-            <img className="w-[8rem]" src="/assets/image-05.png" alt="" />
+            <img
+              className="w-44 h-32 object-cover"
+              src="/assets/image-05.png"
+              alt=""
+            />
 
-            <div className="text-[#990F02]">
-              <p className={`${poppins.className} text-xs`}>
-                <span
-                  className={`${lovelo.className} inline-flex items-baseline text-xl`}
-                >
-                  <Quotes
-                    className="scale-x-[-1] scale-y-[-1]"
-                    size={44}
-                    weight="fill"
-                  />
-                  A HUNGRIA
-                </span>{' '}
-                possui uma das
-              </p>
-              <p className={`${poppins.className} text-xs`}>
-                histórias olímpicas mais ricas e impressionantes do mundo,
-                destacando-se
-              </p>
+            <p
+              className={`${poppins.className} mt-10 text-[#990F02] text-xs text-justify`}
+            >
+              <span className={`${lovelo.className} text-lg`}>A Hungria</span>{' '}
+              possui uma das histórias olímpicas mais ricas e impressionantes do
+              mundo, destacando-se entre as nações com o maior número de
+              medalhas
+            </p>
+          </div>
+
+          <div
+            className={`${poppins.className} flex flex-col gap-1 text-[#990F02] text-xs text-justify`}
+          >
+            <p>
+              per capita. Desde sua primeira participação em 1896, em Atenas, o
+              país construiu uma trajetória marcada por conquistas
+              extraordinárias, especialmente em esportes como esgrima, polo
+              aquático, canoagem e ginástica.
+            </p>
+
+            <p>
+              <span className="ml-8">Ao</span> longo de mais de um século de
+              participação nos Jogos, a Hungria conquistou mais de 500 medalhas,
+              o que a coloca entre os países mais bem-sucedidos na história das
+              Olimpíadas. Atletas húngaros como Aladár Gerevich, com seis
+              medalhas de ouro em esgrima, e Krisztina Egerszegi, uma das
+              nadadoras mais vitoriosas de todos os tempos, tornaram-se ícones
+              não só no país, mas globalmente. Esses atletas ajudaram a definir
+              a reputação da Hungria como uma nação esportiva de elite, cujo
+              espírito competitivo e habilidade técnica permanecem fortes em
+              cada edição dos Jogos.
+            </p>
+
+            <p>
+              <span className="ml-8">Nos</span> dias de hoje, a Hungria continua
+              a ser uma força respeitável nas Olimpíadas, especialmente nas
+              modalidades em que tem tradição, como a canoagem e a esgrima. Com
+              uma sólida infraestrutura esportiva e programas de formação de
+              atletas, o país mantém seu legado e busca constantemente novos
+              talentos para manter sua posição entre as potências olímpicas. A
+              combinação de tradição e inovação garante que a Hungria continue a
+              ser um nome forte no cenário olímpico mundial.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="m-4" id="quadro-de-medalhas">
+        <RoundedBox className="flex gap-2" color="green" border={true}>
+          <img
+            className="w-28 h-56 object-cover"
+            src="/assets/image-06.jpg"
+            alt=""
+          />
+
+          <div className="flex flex-col gap-3 justify-center">
+            <h1 className={`${donau.className} font-medium text-2xl`}>
+              QUADRO DE MEDALHAS
+            </h1>
+
+            <div className={`${lovelo.className} text-sm`}>
+              <p>I. Esgrima: 87 medalhas</p>
+              <p>II. Canoagem: 84 medalhas</p>
+              <p>III. Atletismo: 33 medalhas</p>
+              <p>IV. Natação: 31 medalhas</p>
+              <p>V. Lutas: 19 medalhas</p>
+              <p>VI. Polo Aquático: 15 medalhas</p>
             </div>
           </div>
-          <p className={`${poppins.className} text-xs text-[#990F02]`}>
-            {' '}
-            entre as nações com o maior número de medalhas per capita. Desde sua
-            primeira participação nas Olimpíadas de 1896, em Atenas, o país
-            construiu uma trajetória marcada por conquistas extraordinárias,
-            especialmente em esportes como esgrima, polo aquático, canoagem e
-            ginástica.
-          </p>
-          <p className={`${poppins.className} text-xs text-[#990F02]`}>
-            <span className="ml-8">Ao</span> longo de mais de um século de
-            participação nos Jogos, a Hungria conquistou mais de 500 medalhas, o
-            que a coloca entre os países mais bem-sucedidos na história das
-            Olimpíadas. Atletas húngaros como Aladár Gerevich, com seis medalhas
-            de ouro em esgrima, e Krisztina Egerszegi, uma das nadadoras mais
-            vitoriosas de todos os tempos, tornaram-se ícones não só no país,
-            mas globalmente. Esses atletas ajudaram a definir a reputação da
-            Hungria como uma nação esportiva de elite, cujo espírito competitivo
-            e habilidade técnica permanecem fortes em cada edição dos Jogos.
-          </p>
-          <p className={`${poppins.className} text-xs text-[#990F02]`}>
-            <span className="ml-8">Nos</span> dias de hoje, a Hungria continua a
-            ser uma força respeitável nas Olimpíadas, especialmente nas
-            modalidades em que tem tradição, como a canoagem e a esgrima. Com
-            uma sólida infraestrutura esportiva e programas de formação de
-            atletas, o país mantém seu legado e busca constantemente novos
-            talentos para manter sua posição entre as potências olímpicas. A
-            combinação de tradição e inovação garante que a Hungria continue a
-            ser um nome forte no cenário olímpico mundial.
-            <Quotes
-              className="inline-flex items-baseline"
-              size={44}
-              weight="fill"
-            />
-          </p>
+        </RoundedBox>
+      </div>
+
+      <div className="my-4">
+        <div className="relative bg-[#4D6130] p-6">
+          <div className="absolute top-4 left-0 right-0 h-0.5 bg-[#A1BE76]" />
+          <div className="absolute bottom-4 left-0 right-0 h-0.5 bg-[#A1BE76]" />
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-[#A1BE76]" />
+          <div className="absolute right-4 top-0 bottom-0 w-0.5 bg-[#A1BE76]" />
+
+          <div className="relative z-10">
+            <div className="flex flex-col gap-8 py-2">
+              <RoundedBox className="flex gap-2" color="red">
+                <img
+                  className="w-24 h-24 rounded-2xl"
+                  src="/assets/esgrima.jpg"
+                  alt=""
+                />
+
+                <div className="flex flex-col gap-1 justify-center h-24">
+                  <h1 className={`${donau.className} font-medium text-xl`}>
+                    ESGRIMA
+                  </h1>
+
+                  <p
+                    className={`${font29lt_adir.className} text-sm text-justify`}
+                  >
+                    A Hungria é uma potência na esgrima, acumulando 87 medalhas
+                    olímpicas e consagrando atletas lendários como Aladár
+                    Gerevich.
+                  </p>
+                </div>
+              </RoundedBox>
+
+              <RoundedBox className="flex gap-2" color="green">
+                <img
+                  className="w-24 h-24 rounded-2xl"
+                  src="/assets/atletismo.jpg"
+                  alt=""
+                />
+
+                <div className="flex flex-col gap-1 justify-center h-24">
+                  <h1 className={`${donau.className} font-medium text-xl`}>
+                    ATLETISMO
+                  </h1>
+
+                  <p
+                    className={`${font29lt_adir.className} text-sm text-justify`}
+                  >
+                    No atletismo, a Hungria brilha com 33 medalhas olímpicas,
+                    incluindo 10 ouros, em provas de campo e corrida.
+                  </p>
+                </div>
+              </RoundedBox>
+
+              <RoundedBox className="flex gap-2" color="red">
+                <img
+                  className="w-24 h-24 rounded-2xl"
+                  src="/assets/natação.jpg"
+                  alt=""
+                />
+
+                <div className="flex flex-col gap-1 justify-center h-24">
+                  <h1 className={`${donau.className} font-medium text-xl`}>
+                    NATAÇÃO
+                  </h1>
+
+                  <p
+                    className={`${font29lt_adir.className} text-sm text-justify`}
+                  >
+                    Com 31 medalhas olímpicas, a natação húngara é dominada por
+                    nomes como Krisztina Egerszegi, uma das maiores nadadoras de
+                    todos os tempos.
+                  </p>
+                </div>
+              </RoundedBox>
+
+              <RoundedBox className="flex gap-2" color="green">
+                <img
+                  className="w-24 h-24 rounded-2xl"
+                  src="/assets/canoagem.jpg"
+                  alt=""
+                />
+
+                <div className="flex flex-col gap-1 justify-center h-24">
+                  <h1 className={`${donau.className} font-medium text-xl`}>
+                    CANOAGEM
+                  </h1>
+
+                  <p
+                    className={`${font29lt_adir.className} text-sm text-justify`}
+                  >
+                    A canoagem é uma das modalidades mais vitoriosas da Hungria,
+                    com 84 medalhas conquistadas, destacando atletas como György
+                    Kolonics.
+                  </p>
+                </div>
+              </RoundedBox>
+            </div>
+          </div>
         </div>
       </div>
 

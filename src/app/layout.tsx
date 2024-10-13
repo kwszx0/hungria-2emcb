@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: 'Hungria - 2EMCB',
   description: 'Portfólio informativo --- VIII JIMM',
   icons: {
-    icon: '/assets/image-05.png',
-    shortcut: '/assets/image-05.png',
-    apple: '/assets/image-05.png',
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
   },
   alternates: {
     canonical: 'https://hungria-2emcb.vercel.app/',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'Hungria - 2EMCB',
     images: [
       {
-        url: 'https://hungria-2emcb.vercel.app/assets/image-05.png',
+        url: 'https://hungria-2emcb.vercel.app/icon.png',
         width: 800,
         height: 600,
       },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     creator: '@szxkw0',
     images: [
       {
-        url: 'https://hungria-2emcb.vercel.app/assets/image-05.png',
+        url: 'https://hungria-2emcb.vercel.app/icon.png',
         width: 800,
         height: 600,
       },
