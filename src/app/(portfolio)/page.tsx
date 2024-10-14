@@ -200,7 +200,7 @@ export default function Home() {
           <img
             className="w-28 h-56 object-cover"
             src="/assets/medalhas.jpg"
-            alt=""
+            alt="Medalhas"
           />
 
           <div className="flex flex-col gap-3 justify-center">
