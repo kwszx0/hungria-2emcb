@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
-import { inter } from './fonts'
-import './globals.css'
+import { inter } from '../fonts'
+import '../globals.css'
 
 export const metadata: Metadata = {
   title: 'Hungria - 2EMCB',

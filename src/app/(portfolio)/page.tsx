@@ -9,10 +9,12 @@ import {
   cmu_serif,
   donau,
   font29lt_adir,
+  league_spartan,
   lovelo,
   poppins,
 } from '../fonts'
 import RoundedBox from '@/components/RoundedBox'
+import AthleteBox from '@/components/AthleteBox'
 
 export default function Home() {
   return (
@@ -22,8 +24,8 @@ export default function Home() {
       <div className="flex justify-center items-center">
         <img
           className="rounded-3xl h-52 w-[25rem]"
-          src="/assets/image-01.jpg"
-          alt=""
+          src="/assets/parlamento-budapeste.jpg"
+          alt="Parlamento de Budapeste"
         />
       </div>
 
@@ -45,8 +47,8 @@ export default function Home() {
           <div className="w-4 h-full bg-[#990F02] rounded-r-full" />
           <img
             className="w-80 h-full border-2 border-[#990F02]"
-            src="/assets/image-02.jpg"
-            alt=""
+            src="/assets/parlamento-budapeste-02.jpg"
+            alt="Parlamento de Budapeste"
           />
           <div className="w-4 h-full bg-[#990f02] rounded-l-full" />
         </div>
@@ -108,8 +110,8 @@ export default function Home() {
             <div className="flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 z-10">
               <img
                 className="w-80 h-[13.5rem] object-cover border-[3px] border-dashed border-[#990F02]"
-                src="/assets/image-03.jpg"
-                alt="Localização"
+                src="/assets/territorio.jpg"
+                alt="Território"
               />
             </div>
           </div>
@@ -125,7 +127,7 @@ export default function Home() {
           <div className="flex justify-center items-center w-1/2">
             <img
               className="w-44 object-cover border-[10px] border-[#990F02] rounded-full"
-              src="/assets/image-04.png"
+              src="/assets/contexto-olímpico.png"
               alt="Contexto Olímpico"
             />
           </div>
@@ -142,8 +144,8 @@ export default function Home() {
           <div className="flex">
             <img
               className="w-44 h-32 object-cover"
-              src="/assets/image-05.png"
-              alt=""
+              src="/assets/logo-olimpíadas.png"
+              alt="Logo das Olimpíadas"
             />
 
             <p
@@ -194,10 +196,10 @@ export default function Home() {
       </div>
 
       <div className="m-4" id="quadro-de-medalhas">
-        <RoundedBox className="flex gap-2" color="green" border={true}>
+        <RoundedBox modality={false} color="green" border={true}>
           <img
             className="w-28 h-56 object-cover"
-            src="/assets/image-06.jpg"
+            src="/assets/medalhas.jpg"
             alt=""
           />
 
@@ -218,7 +220,7 @@ export default function Home() {
         </RoundedBox>
       </div>
 
-      <div className="my-4">
+      <div className="my-4" id="modalidades">
         <div className="relative bg-[#4D6130] p-6">
           <div className="absolute top-4 left-0 right-0 h-0.5 bg-[#A1BE76]" />
           <div className="absolute bottom-4 left-0 right-0 h-0.5 bg-[#A1BE76]" />
@@ -227,95 +229,101 @@ export default function Home() {
 
           <div className="relative z-10">
             <div className="flex flex-col gap-8 py-2">
-              <RoundedBox className="flex gap-2" color="red">
-                <img
-                  className="w-24 h-24 rounded-2xl"
-                  src="/assets/esgrima.jpg"
-                  alt=""
-                />
-
-                <div className="flex flex-col gap-1 justify-center h-24">
-                  <h1 className={`${donau.className} font-medium text-xl`}>
-                    ESGRIMA
-                  </h1>
-
-                  <p
-                    className={`${font29lt_adir.className} text-sm text-justify`}
-                  >
-                    A Hungria é uma potência na esgrima, acumulando 87 medalhas
-                    olímpicas e consagrando atletas lendários como Aladár
-                    Gerevich.
-                  </p>
-                </div>
+              <RoundedBox imageSrc="esgrima.jpg" heading="Esgrima" color="red">
+                A Hungria é uma potência na esgrima, acumulando 87 medalhas
+                olímpicas e consagrando atletas lendários como Aladár Gerevich.
               </RoundedBox>
 
-              <RoundedBox className="flex gap-2" color="green">
-                <img
-                  className="w-24 h-24 rounded-2xl"
-                  src="/assets/atletismo.jpg"
-                  alt=""
-                />
-
-                <div className="flex flex-col gap-1 justify-center h-24">
-                  <h1 className={`${donau.className} font-medium text-xl`}>
-                    ATLETISMO
-                  </h1>
-
-                  <p
-                    className={`${font29lt_adir.className} text-sm text-justify`}
-                  >
-                    No atletismo, a Hungria brilha com 33 medalhas olímpicas,
-                    incluindo 10 ouros, em provas de campo e corrida.
-                  </p>
-                </div>
+              <RoundedBox
+                imageSrc="atletismo.jpg"
+                heading="Atletismo"
+                color="green"
+              >
+                No atletismo, a Hungria brilha com 33 medalhas olímpicas,
+                incluindo 10 ouros, em provas de campo e corrida.
               </RoundedBox>
 
-              <RoundedBox className="flex gap-2" color="red">
-                <img
-                  className="w-24 h-24 rounded-2xl"
-                  src="/assets/natação.jpg"
-                  alt=""
-                />
-
-                <div className="flex flex-col gap-1 justify-center h-24">
-                  <h1 className={`${donau.className} font-medium text-xl`}>
-                    NATAÇÃO
-                  </h1>
-
-                  <p
-                    className={`${font29lt_adir.className} text-sm text-justify`}
-                  >
-                    Com 31 medalhas olímpicas, a natação húngara é dominada por
-                    nomes como Krisztina Egerszegi, uma das maiores nadadoras de
-                    todos os tempos.
-                  </p>
-                </div>
+              <RoundedBox imageSrc="natação.jpg" heading="Natação" color="red">
+                Com 31 medalhas olímpicas, a natação húngara é dominada por
+                nomes como Krisztina Egerszegi, uma das maiores nadadoras de
+                todos os tempos.
               </RoundedBox>
 
-              <RoundedBox className="flex gap-2" color="green">
-                <img
-                  className="w-24 h-24 rounded-2xl"
-                  src="/assets/canoagem.jpg"
-                  alt=""
-                />
-
-                <div className="flex flex-col gap-1 justify-center h-24">
-                  <h1 className={`${donau.className} font-medium text-xl`}>
-                    CANOAGEM
-                  </h1>
-
-                  <p
-                    className={`${font29lt_adir.className} text-sm text-justify`}
-                  >
-                    A canoagem é uma das modalidades mais vitoriosas da Hungria,
-                    com 84 medalhas conquistadas, destacando atletas como György
-                    Kolonics.
-                  </p>
-                </div>
+              <RoundedBox
+                imageSrc="canoagem.jpg"
+                heading="Canoagem"
+                color="green"
+              >
+                A canoagem é uma das modalidades mais vitoriosas da Hungria, com
+                84 medalhas conquistadas, destacando atletas como György
+                Kolonics.
               </RoundedBox>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mx-2 space-y-4" id="parlamento-budapeste">
+        <div className="flex justify-center items-center">
+          <img
+            className="w-[calc(100%-0.5rem)]"
+            src="/assets/parlamento-budapeste-03.jpg"
+            alt="Parlamento de Budapeste"
+          />
+        </div>
+
+        <p
+          className={`${league_spartan.className} text-[#EC5C4F] text-justify text-xs font-bold`}
+        >
+          — O Parlamento de Budapeste, às margens do rio Danúbio, é uma das
+          construções mais icônicas da Hungria, com sua grandiosa arquitetura
+          neogótica, simbolizando o coração político do país e uma das maiores
+          atrações turísticas da capital.
+        </p>
+      </div>
+
+      <Separator />
+
+      <div className="space-y-5" id="atletas">
+        <AthleteBox
+          athleteName="Aladár Gerevich"
+          athleteImage="gerevich.jpg"
+          color="red"
+        >
+          Esgrimista lendário, Gerevich conquistou sete medalhas de ouro
+          olímpicas entre 1932 e 1960, sendo considerado o maior esgrimista de
+          sabre da história.
+        </AthleteBox>
+
+        <AthleteBox
+          athleteName="Krisztina Egerszegi"
+          athleteImage="egerszegi.jpg"
+          color="green"
+        >
+          A campeã olímpica húngara venceu cinco medalhas de ouro entre 1988 e
+          1996, destacando-se nas provas de nado costas, tornando-se uma das
+          nadadoras mais jovens e vitoriosas da história.
+        </AthleteBox>
+
+        <AthleteBox
+          athleteName="Ferenc Puskás"
+          athleteImage="puskás.jpg"
+          color="red"
+        >
+          Um dos maiores jogadores de futebol de todos os tempos, Puskás liderou
+          a seleção húngara nos anos 1950, sendo um dos maiores artilheiros da
+          história e referência do "Time de Ouro" da Hungria.
+        </AthleteBox>
+
+        <AthleteBox
+          athleteName="György Kolonics"
+          athleteImage="kolonics.jpg"
+          color="green"
+        >
+          Kolonics foi um dos maiores canoístas da Hungria, com duas medalhas de
+          ouro olímpicas (1996 e 2000) e um total de quinze títulos mundiais,
+          tornando-se uma lenda na canoagem.
+        </AthleteBox>
       </div>
 
       <Separator />

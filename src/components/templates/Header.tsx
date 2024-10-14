@@ -12,7 +12,7 @@ export default function Header() {
           <div className="w-6" />
 
           <div className="flex justify-center items-center gap-1 text-[#D4E5BC]">
-            <img className="w-6" src="/assets/jimm.png" alt="VIII JIMM" />
+            <img className="w-6" src="/assets/jimm-logo.png" alt="VIII JIMM" />
             <X size={22} weight="light" />
             <h1 className="text-xl">2EMCB</h1>
           </div>
@@ -76,6 +76,28 @@ export default function Header() {
                 onClick={() => setIsOpen(false)}
               >
                 QUADRO DE MEDALHAS
+              </a>
+            </li>
+
+            <li>
+              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a
+                href="#modalidades"
+                className="text-2xl h-14 flex items-center hover:bg-[#3B4C23]/90 transition-colors duration-300 ease-in-out p-4"
+                onClick={() => setIsOpen(false)}
+              >
+                MODALIDADES
+              </a>
+            </li>
+
+            <li>
+              {/* biome-ignore lint/a11y/useValidAnchor: <explanation> */}
+              <a
+                href="#atletas"
+                className="text-2xl h-14 flex items-center hover:bg-[#3B4C23]/90 transition-colors duration-300 ease-in-out p-4"
+                onClick={() => setIsOpen(false)}
+              >
+                ATLETAS
               </a>
             </li>
           </ul>

@@ -2,7 +2,7 @@ import { league_spartan } from '@/app/fonts'
 import { InstagramLogo } from '@phosphor-icons/react'
 
 export default function Footer() {
-  const handleClick = (profile: string) => {
+  function handleClick(profile: string) {
     window.open(`https://www.instagram.com/${profile}`, '_blank')
   }
 
@@ -23,6 +23,7 @@ export default function Footer() {
           >
             <InstagramLogo size={20} /> 2CB
           </button>
+
           <button
             className="flex gap-1 font-bold text-md hover:underline"
             type="button"
@@ -30,6 +31,7 @@ export default function Footer() {
           >
             <InstagramLogo size={20} /> JIMM
           </button>
+
           <button
             className="flex gap-1 font-bold text-md hover:underline"
             type="button"
