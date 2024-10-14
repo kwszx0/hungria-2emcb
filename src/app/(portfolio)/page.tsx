@@ -327,8 +327,6 @@ export default function Home() {
       </div>
 
       <Separator />
-
-      {/* <div className="h-[2000px]" /> */}
     </Page>
   )
 }
