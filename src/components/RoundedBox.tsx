@@ -1,5 +1,6 @@
 import { donau, font29lt_adir } from '@/app/fonts'
 import type { ReactNode } from 'react'
+
 interface RoundedBoxProps {
   modality?: boolean
   imageSrc?: string
